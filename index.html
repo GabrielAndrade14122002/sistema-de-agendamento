@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento de Serviços - Barbearia</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Barbearia Elegante</h1>
+      <p>Agende seu horário e venha cuidar do seu estilo com a gente!</p>
+    </div>
+  </header>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="servicos-lista">
+      <div class="servico">
+        <h3>Corte Masculino</h3>
+        <p>Estilo e precisão para o seu corte de cabelo.</p>
+      </div>
+      <div class="servico">
+        <h3>Barba</h3>
+        <p>Deixe sua barba impecável com nossos profissionais.</p>
+      </div>
+      <div class="servico">
+        <h3>Pacote Completo</h3>
+        <p>Corte de cabelo + barba para um visual completo e moderno.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="agendamento">
+    <h2>Agende Seu Serviço</h2>
+    <div class="agendamento-container">
+      <div id="calendario"></div>
+      <form id="form-agendamento">
+        <label for="horario">Escolha um horário:</label>
+        <input type="time" id="horario" name="horario" required>
+        
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Seu e-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Agendar</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <a href="https://wa.me/55XXXXXXXXXXX" class="whatsapp-btn" target="_blank">WhatsApp</a>
+    <a href="mailto:contato@barbearia.com" class="email-btn">Email</a>
+  </section>
+
+  <div id="notificacao" class="notificacao hidden">
+    <p>Agendamento realizado com sucesso!</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Barbearia Elegante | Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
+
